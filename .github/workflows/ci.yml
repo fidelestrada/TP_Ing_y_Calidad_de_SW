@@ -32,3 +32,8 @@ jobs:
 
       - name: Compilar y ejecutar tests
         run: mvn --batch-mode test
+
+        #cambios para el PR del Ejercicio 4
+
+        permissions:
+          contents: read
