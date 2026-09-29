@@ -54,3 +54,4 @@ public class ColaDeSolicitudes extends Entity {
 	}
 
 }
+#Ejercicio 7.a 
