@@ -1,0 +1,34 @@
+
+# Workflow de Integración Continua (CI)
+# Ejecuta las pruebas automatizadas en cada push y pull request hacia las ramas principales.
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v7
+
+      - name: Configurar Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Compilar y ejecutar tests
+        run: mvn --batch-mode test

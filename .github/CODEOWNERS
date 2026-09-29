@@ -1,0 +1,21 @@
+# CODEOWNERS - responsables de revision por area del proyecto
+# La ultima regla que coincide con un archivo es la que se aplica.
+
+# Responsable por defecto (cualquier archivo sin regla especifica)
+*                                   @emmamazzuferi thiagoac04@gmail.com @fidelestrada ludmigroz@gmail.com
+
+# Codigo fuente Java
+/bin/des/                     @emmamazzuferi @fidelestrada
+
+# Ejercicio
+/bin/ejercicio1/                   thiagoac04@gmail.com  @fidelestrada
+
+# config
+/pom.xml                            @emmamazzuferi
+
+# config
+configuración                     ludmigroz@gmail.com
+*.md                                ludmigroz@gmail.com
+
+# git
+/.github/                           @emmamazzuferi
